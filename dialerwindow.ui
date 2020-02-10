@@ -206,7 +206,7 @@
      </rect>
     </property>
    </widget>
-   <widget class="QTableView" name="tableView">
+   <widget class="QTableView" name="tableSafe">
     <property name="geometry">
      <rect>
       <x>410</x>
