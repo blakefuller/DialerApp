@@ -16,3 +16,8 @@ DialerWindow::~DialerWindow()
     delete ui;
 }
 
+
+void DialerWindow::on_pushOne_clicked()
+{
+    ui->lineDisplay->setText("1");
+}

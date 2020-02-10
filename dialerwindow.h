@@ -15,7 +15,11 @@ public:
     DialerWindow(QWidget *parent = nullptr);
     ~DialerWindow();
 
+private slots:
+    void on_pushOne_clicked();
+
 private:
     Ui::DialerWindow *ui;
+    QString number;
 };
 #endif // DIALERWINDOW_H
