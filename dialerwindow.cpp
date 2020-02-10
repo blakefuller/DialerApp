@@ -11,6 +11,10 @@ DialerWindow::DialerWindow(QWidget *parent)
 {
     ui->setupUi(this);
     ui->lineDisplay->setInputMask("(999) 999-9999");
+
+    // parse the csv file and set table view
+    QStandardItemModel *model = addressParser.Parse();
+    ui->tableSafe->setModel(model);
 }
 
 DialerWindow::~DialerWindow()

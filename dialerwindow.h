@@ -2,6 +2,8 @@
 #define DIALERWINDOW_H
 
 #include <QMainWindow>
+#include <QStandardItem>
+#include "addressparser.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DialerWindow; }
@@ -25,6 +27,6 @@ private slots:
 private:
     Ui::DialerWindow *ui;
     QString number;
-
+    AddressParser addressParser;
 };
 #endif // DIALERWINDOW_H
