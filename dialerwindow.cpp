@@ -1,7 +1,9 @@
 #include "dialerwindow.h"
 #include "ui_dialerwindow.h"
 #include "QLineEdit"
+#include <sstream>
 
+using namespace std;
 
 DialerWindow::DialerWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -14,6 +16,14 @@ DialerWindow::DialerWindow(QWidget *parent)
 DialerWindow::~DialerWindow()
 {
     delete ui;
+}
+
+// Sets all the
+QString DialerWindow :: CurrentNumber()
+{
+    stringstream ss;
+
+
 }
 
 

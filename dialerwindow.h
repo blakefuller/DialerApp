@@ -15,11 +15,16 @@ public:
     DialerWindow(QWidget *parent = nullptr);
     ~DialerWindow();
 
+    QString CurrentNumber();
+
+
+
 private slots:
     void on_pushOne_clicked();
 
 private:
     Ui::DialerWindow *ui;
     QString number;
+
 };
 #endif // DIALERWINDOW_H
