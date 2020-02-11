@@ -6,13 +6,14 @@
 #include <sstream>
 
 using namespace std;
+const QString MASK = "(999) 999-9999";
 
 DialerWindow::DialerWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::DialerWindow)
 {
     ui->setupUi(this);
-    ui->lineDisplay->setInputMask("(999) 999-9999");
+    ui->lineDisplay->setInputMask(MASK);
 
     // parse the csv file and set table view
     QStandardItemModel *model = addressParser.Parse();
