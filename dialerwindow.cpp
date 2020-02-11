@@ -1,6 +1,5 @@
 #include "dialerwindow.h"
 #include "ui_dialerwindow.h"
-#include "addressparser.h"
 #include "QLineEdit"
 #include "QMessageBox"
 #include <sstream>
@@ -15,9 +14,6 @@ DialerWindow::DialerWindow(QWidget *parent)
     ui->setupUi(this);
     ui->lineDisplay->setInputMask(MASK);
 
-    // parse the csv file and set table view
-    QStandardItemModel *model = addressParser.Parse();
-    ui->tableSafe->setModel(model);
 }
 
 DialerWindow::~DialerWindow()

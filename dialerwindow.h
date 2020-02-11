@@ -3,7 +3,6 @@
 
 #include <QMainWindow>
 #include <QStandardItem>
-#include "addressparser.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DialerWindow; }
@@ -56,6 +55,5 @@ private:
     Ui::DialerWindow *ui;
 
     QString numMain;
-    AddressParser addressParser;
 };
 #endif // DIALERWINDOW_H
