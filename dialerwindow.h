@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QStandardItem>
+#include "addressbookmodel.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DialerWindow; }
@@ -55,5 +56,6 @@ private:
     Ui::DialerWindow *ui;
 
     QString numMain;
+    AddressBookModel *addressBookModel;
 };
 #endif // DIALERWINDOW_H

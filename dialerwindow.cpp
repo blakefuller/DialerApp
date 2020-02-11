@@ -9,11 +9,12 @@ const QString MASK = "(999) 999-9999";
 
 DialerWindow::DialerWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::DialerWindow)
+    , ui(new Ui::DialerWindow),
+      addressBookModel(new AddressBookModel(this))
 {
     ui->setupUi(this);
     ui->lineDisplay->setInputMask(MASK);
-
+    ui->tableSafe->setModel(addressBookModel);
 }
 
 DialerWindow::~DialerWindow()
