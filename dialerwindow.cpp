@@ -1,5 +1,6 @@
 #include "dialerwindow.h"
 #include "ui_dialerwindow.h"
+#include "addressparser.h"
 #include "QLineEdit"
 #include "QMessageBox"
 #include <sstream>
