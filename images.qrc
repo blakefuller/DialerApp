@@ -2,6 +2,5 @@
     <qresource prefix="/">
         <file>images/backspace-480.png</file>
         <file>images/gray button.png</file>
-        <file>images/cirlcle-dots-clipart-gray-4.jpg</file>
     </qresource>
 </RCC>
