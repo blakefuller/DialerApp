@@ -3,6 +3,8 @@
 #include "QLineEdit"
 #include "QMessageBox"
 #include <sstream>
+#include <QFileDialog>
+#include <iostream>
 
 using namespace std;
 const QString MASK = "(999) 999-9999";
@@ -146,5 +148,9 @@ void DialerWindow::on_pushEnd_clicked()
 
 void DialerWindow::on_actionOpen_Address_Book_triggered()
 {
+    QString file = QFileDialog::getOpenFileName(this,
+                                                tr("Open Address Book"), "",
+                                                tr("Address Book (*.csv);;All Files (*)"));
 
+    cout << file.toStdString() << endl;
 }
