@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>929</width>
+    <width>986</width>
     <height>754</height>
    </rect>
   </property>
@@ -255,7 +255,7 @@ background-repeat:none;</string>
     <property name="geometry">
      <rect>
       <x>310</x>
-      <y>430</y>
+      <y>440</y>
       <width>111</width>
       <height>101</height>
      </rect>
@@ -275,16 +275,16 @@ background-repeat:none;</string>
    <widget class="QPushButton" name="pushEnd">
     <property name="geometry">
      <rect>
-      <x>180</x>
-      <y>540</y>
-      <width>111</width>
-      <height>101</height>
+      <x>200</x>
+      <y>570</y>
+      <width>81</width>
+      <height>81</height>
      </rect>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+border-image: url(:/images/phone-512.png);
 alternate-background-color: rgb(255, 255, 255);
-border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
 border: none;
 background-repeat:none;</string>
@@ -297,7 +297,7 @@ background-repeat:none;</string>
     <property name="geometry">
      <rect>
       <x>330</x>
-      <y>560</y>
+      <y>570</y>
       <width>71</width>
       <height>71</height>
      </rect>
@@ -335,10 +335,10 @@ font: 12pt &quot;Segoe UI&quot;;</string>
    <widget class="QTableView" name="tableSafe">
     <property name="geometry">
      <rect>
-      <x>480</x>
-      <y>80</y>
-      <width>361</width>
-      <height>471</height>
+      <x>540</x>
+      <y>120</y>
+      <width>371</width>
+      <height>531</height>
      </rect>
     </property>
    </widget>
@@ -362,7 +362,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
    <widget class="QLabel" name="addressBook">
     <property name="geometry">
      <rect>
-      <x>490</x>
+      <x>540</x>
       <y>30</y>
       <width>161</width>
       <height>20</height>
@@ -374,29 +374,6 @@ font: 12pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="text">
      <string>Address Book</string>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label">
-    <property name="geometry">
-     <rect>
-      <x>210</x>
-      <y>570</y>
-      <width>51</width>
-      <height>41</height>
-     </rect>
-    </property>
-    <property name="autoFillBackground">
-     <bool>false</bool>
-    </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(:/images/kisspng-computer-icons-mobile-phones-telephone-call-icon-d-phone-icon-5abf145b7f8de6.5771346015224720275225.png);
-background-color:transparent;
-alternate-background-color: rgb(255, 255, 255);
-border: none;
-background-repeat:none;</string>
-    </property>
-    <property name="text">
-     <string/>
     </property>
    </widget>
    <widget class="QLabel" name="label_2">
@@ -413,6 +390,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -436,6 +414,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -459,6 +438,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -482,6 +462,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -505,6 +486,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -528,6 +510,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -551,6 +534,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -574,6 +558,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -597,6 +582,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -620,6 +606,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
+color: rgb(247, 247, 247);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -635,7 +622,7 @@ background-color:none;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>929</width>
+     <width>986</width>
      <height>29</height>
     </rect>
    </property>
