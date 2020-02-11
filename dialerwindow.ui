@@ -633,11 +633,23 @@ background-color:none;</string>
      <x>0</x>
      <y>0</y>
      <width>986</width>
-     <height>29</height>
+     <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuTools">
+    <property name="title">
+     <string>Tools</string>
+    </property>
+    <addaction name="actionOpen_Address_Book"/>
+   </widget>
+   <addaction name="menuTools"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionOpen_Address_Book">
+   <property name="text">
+    <string>Open Address Book...</string>
+   </property>
+  </action>
  </widget>
  <resources/>
  <connections/>

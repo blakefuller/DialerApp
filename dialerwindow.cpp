@@ -146,3 +146,8 @@ void DialerWindow::on_pushEnd_clicked()
     ui->lineDisplay->clear();
 
 }
+
+void DialerWindow::on_actionOpen_Address_Book_triggered()
+{
+
+}

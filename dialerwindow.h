@@ -50,6 +50,8 @@ private slots:
 
     void on_pushEnd_clicked();
 
+    void on_actionOpen_Address_Book_triggered();
+
 private:
     Ui::DialerWindow *ui;
 
