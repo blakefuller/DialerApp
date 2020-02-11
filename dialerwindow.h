@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include <QStandardItem>
-#include "addressparser.h"
+#include "addressbookmodel.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class DialerWindow; }
@@ -50,10 +50,14 @@ private slots:
 
     void on_pushEnd_clicked();
 
+    void on_actionOpen_Address_Book_triggered();
+
+    void on_tableSafe_clicked(const QModelIndex &index);
+
 private:
     Ui::DialerWindow *ui;
 
     QString numMain;
-    AddressParser addressParser;
+    AddressBookModel *addressBookModel;
 };
 #endif // DIALERWINDOW_H

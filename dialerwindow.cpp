@@ -1,22 +1,22 @@
 #include "dialerwindow.h"
 #include "ui_dialerwindow.h"
-#include "addressparser.h"
 #include "QLineEdit"
 #include "QMessageBox"
 #include <sstream>
+#include <QFileDialog>
+#include <iostream>
 
 using namespace std;
+const QString MASK = "999-999-9999";
 
 DialerWindow::DialerWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::DialerWindow)
+    , ui(new Ui::DialerWindow),
+      addressBookModel(new AddressBookModel(this))
 {
     ui->setupUi(this);
-    ui->lineDisplay->setInputMask("(999) 999-9999");
-
-    // parse the csv file and set table view
-    QStandardItemModel *model = addressParser.Parse();
-    ui->tableSafe->setModel(model);
+    ui->lineDisplay->setInputMask(MASK);
+    ui->tableSafe->setModel(addressBookModel);
 }
 
 DialerWindow::~DialerWindow()
@@ -137,11 +137,37 @@ void DialerWindow::on_pushEnd_clicked()
 {
     // build message box
     QMessageBox msgBox;
-    msgBox.setText("Calling\n (" + numMain.left(3) + ") " + numMain.mid(3,3) + "-" + numMain.mid(6));
-    msgBox.exec();
+    msgBox.setText("Calling...\n" + numMain.left(3) + "-" + numMain.mid(3,3) + "-" + numMain.mid(6));
+    msgBox.setStandardButtons(QMessageBox::Cancel | QMessageBox::Close);
+    msgBox.setDefaultButton(QMessageBox::Close);
+    int ret = msgBox.exec();
 
-    // reset numMain
-    numMain.clear();
-    ui->lineDisplay->clear();
+    switch (ret)
+    {
+    case QMessageBox::Cancel:
+        break;
+    case QMessageBox::Close:
+        // reset numMain
+        numMain.clear();
+        ui->lineDisplay->clear();
+        break;
+    }
+}
 
+void DialerWindow::on_actionOpen_Address_Book_triggered()
+{
+    QString file = QFileDialog::getOpenFileName(this,
+                                                tr("Open Address Book"), "",
+                                                tr("Address Book (*.csv);;All Files (*)"));
+
+    cout << file.toStdString() << endl;
+
+    addressBookModel->openFile(file);
+}
+
+void DialerWindow::on_tableSafe_clicked(const QModelIndex &index)
+{
+    QString text = addressBookModel->getPhoneNumber(index.row());
+    numMain = text;
+    ui->lineDisplay->setText(text);
 }
