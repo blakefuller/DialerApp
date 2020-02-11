@@ -7,7 +7,7 @@
 #include <iostream>
 
 using namespace std;
-const QString MASK = "(999) 999-9999";
+const QString MASK = "999-999-9999";
 
 DialerWindow::DialerWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -137,13 +137,21 @@ void DialerWindow::on_pushEnd_clicked()
 {
     // build message box
     QMessageBox msgBox;
-    msgBox.setText("Calling\n (" + numMain.left(3) + ") " + numMain.mid(3,3) + "-" + numMain.mid(6));
-    msgBox.exec();
+    msgBox.setText("Calling...\n" + numMain.left(3) + "-" + numMain.mid(3,3) + "-" + numMain.mid(6));
+    msgBox.setStandardButtons(QMessageBox::Cancel | QMessageBox::Close);
+    msgBox.setDefaultButton(QMessageBox::Close);
+    int ret = msgBox.exec();
 
-    // reset numMain
-    numMain.clear();
-    ui->lineDisplay->clear();
-
+    switch (ret)
+    {
+    case QMessageBox::Cancel:
+        break;
+    case QMessageBox::Close:
+        // reset numMain
+        numMain.clear();
+        ui->lineDisplay->clear();
+        break;
+    }
 }
 
 void DialerWindow::on_actionOpen_Address_Book_triggered()
