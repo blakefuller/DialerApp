@@ -52,12 +52,8 @@ private slots:
 
 private:
     Ui::DialerWindow *ui;
-<<<<<<< HEAD
-    QString numMain;
 
-=======
-    QString number;
+    QString numMain;
     AddressParser addressParser;
->>>>>>> 0319a6a113c2b6f45ec79db9b10abd10a085455c
 };
 #endif // DIALERWINDOW_H

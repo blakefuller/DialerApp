@@ -139,4 +139,9 @@ void DialerWindow::on_pushEnd_clicked()
     QMessageBox msgBox;
     msgBox.setText("Calling\n (" + numMain.left(3) + ") " + numMain.mid(3,3) + "-" + numMain.mid(6));
     msgBox.exec();
+
+    // reset numMain
+    numMain.clear();
+    ui->lineDisplay->clear();
+
 }
