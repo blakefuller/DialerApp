@@ -2,5 +2,6 @@
     <qresource prefix="/">
         <file>images/backspace-480.png</file>
         <file>images/gray button.png</file>
+        <file>images/kisspng-computer-icons-mobile-phones-telephone-call-icon-d-phone-icon-5abf145b7f8de6.5771346015224720275225.png</file>
     </qresource>
 </RCC>
