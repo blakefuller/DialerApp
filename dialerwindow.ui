@@ -14,7 +14,7 @@
    <string>DialerWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(255, 255, 255);</string>
+   <string notr="true">background-color: rgb(213, 213, 213);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushOne">
@@ -321,6 +321,15 @@ background-repeat:none;</string>
       <width>311</width>
       <height>31</height>
      </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-color:none;
+color: rgb(0, 0, 0);
+border: transparent;
+</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
     </property>
    </widget>
    <widget class="QTableView" name="tableSafe">
