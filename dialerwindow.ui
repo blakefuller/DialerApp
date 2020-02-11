@@ -14,7 +14,7 @@
    <string>DialerWindow</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">background-color: rgb(235, 235, 235);</string>
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QPushButton" name="pushOne">
@@ -52,6 +52,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -73,6 +74,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -94,6 +96,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -115,6 +118,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -136,6 +140,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -157,6 +162,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -178,6 +184,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -199,6 +206,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -241,8 +249,9 @@ color: rgb(0, 0, 0);</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
-alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
+alternate-background-color: rgb(255, 255, 255);
 color: rgb(0, 0, 0);
 border: none;
 background-repeat:none;</string>
@@ -262,6 +271,7 @@ background-repeat:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background-color:transparent;
+font: 75 10pt &quot;MS Shell Dlg 2&quot;;
 alternate-background-color: rgb(255, 255, 255);
 border-image: url(:/images/gray button.png);
 color: rgb(0, 0, 0);
@@ -390,7 +400,7 @@ font: 12pt &quot;Segoe UI&quot;;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -414,7 +424,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -438,7 +448,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -462,7 +472,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -486,7 +496,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -510,7 +520,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -534,7 +544,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -558,7 +568,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -582,7 +592,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
@@ -606,7 +616,7 @@ background-color:none;</string>
     </property>
     <property name="styleSheet">
      <string notr="true">background: none;
-color: rgb(247, 247, 247);
+color: rgb(163, 163, 163);
 background-color:none;</string>
     </property>
     <property name="text">
