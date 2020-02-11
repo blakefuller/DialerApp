@@ -153,4 +153,6 @@ void DialerWindow::on_actionOpen_Address_Book_triggered()
                                                 tr("Address Book (*.csv);;All Files (*)"));
 
     cout << file.toStdString() << endl;
+
+    addressBookModel->openFile(file);
 }
