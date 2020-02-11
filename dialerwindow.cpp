@@ -156,3 +156,10 @@ void DialerWindow::on_actionOpen_Address_Book_triggered()
 
     addressBookModel->openFile(file);
 }
+
+void DialerWindow::on_tableSafe_clicked(const QModelIndex &index)
+{
+    QString text = addressBookModel->getPhoneNumber(index.row());
+    numMain = text;
+    ui->lineDisplay->setText(text);
+}

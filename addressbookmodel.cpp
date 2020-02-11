@@ -81,3 +81,11 @@ void AddressBookModel::openFile(QString filePath)
 
     emit layoutChanged();
 }
+
+QString AddressBookModel::getPhoneNumber(int index)
+{
+    QString numDashes = phoneNumbers.at(index);
+    QString number = numDashes.left(3) + numDashes.mid(4,3) + numDashes.mid(8);
+    cout << number.toStdString() << endl;
+    return number;
+}

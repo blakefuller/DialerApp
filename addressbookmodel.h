@@ -21,6 +21,7 @@ public:
     QVariant data(const QModelIndex &index, int role) const;
 
     void openFile(QString filePath);
+    QString getPhoneNumber(int index);
 };
 
 #endif // ADDRESSBOOKMODEL_H
