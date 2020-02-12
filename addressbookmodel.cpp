@@ -68,11 +68,6 @@ void AddressBookModel::openFile(QString filePath)
         if(i == 0)
             continue;
 
-        for(int j = 0; j < fields.length(); j++)
-        {
-            std::cout << fields[j].toStdString() << std::endl;
-        }
-
         firstNames.push_back(fields[0]);
         lastNames.push_back(fields[1]);
         phoneNumbers.push_back(fields[7]);
@@ -89,7 +84,6 @@ QString AddressBookModel::getPhoneNumber(int index)
 {
     QString numDashes = phoneNumbers.at(filterIndex[index]);
     QString number = numDashes.left(3) + numDashes.mid(4,3) + numDashes.mid(8);
-    cout << number.toStdString() << endl;
     return number;
 }
 
@@ -100,10 +94,12 @@ void AddressBookModel::setFilterString(QString fStr)
 
     // matches phone numbers that start with fStr
     for (int i = 0; i < phoneNumbers.size(); i++)
+    {
         if (phoneNumbers[i].startsWith(fStr))
         {
             filterIndex.push_back(i);
         }
+    }
 
     emit layoutChanged();
 }
