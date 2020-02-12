@@ -453,7 +453,7 @@ font: 63 12pt &quot;Lucida Fax&quot;;</string>
      <string>Recent</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QLabel" name="MNO">
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -477,7 +477,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_3">
+   <widget class="QLabel" name="JKL">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -501,7 +501,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_4">
+   <widget class="QLabel" name="GHI">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -525,7 +525,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_5">
+   <widget class="QLabel" name="ABC">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -549,7 +549,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_6">
+   <widget class="QLabel" name="DEF">
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -573,7 +573,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_7">
+   <widget class="QLabel" name="percent">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -597,7 +597,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_8">
+   <widget class="QLabel" name="PQRS">
     <property name="geometry">
      <rect>
       <x>200</x>
@@ -621,7 +621,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_9">
+   <widget class="QLabel" name="TUV">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -645,7 +645,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_10">
+   <widget class="QLabel" name="WXYZ">
     <property name="geometry">
      <rect>
       <x>420</x>
@@ -669,7 +669,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label_11">
+   <widget class="QLabel" name="plus">
     <property name="geometry">
      <rect>
       <x>310</x>
@@ -693,7 +693,7 @@ background-color:none;</string>
      <set>Qt::AlignCenter</set>
     </property>
    </widget>
-   <widget class="QLabel" name="label">
+   <widget class="QLabel" name="dialpad">
     <property name="geometry">
      <rect>
       <x>170</x>
@@ -712,7 +712,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_12">
+   <widget class="QLabel" name="personIcon">
     <property name="geometry">
      <rect>
       <x>370</x>
@@ -731,7 +731,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_13">
+   <widget class="QLabel" name="recentIcon">
     <property name="geometry">
      <rect>
       <x>280</x>
@@ -750,7 +750,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_14">
+   <widget class="QLabel" name="favoriteIcons">
     <property name="geometry">
      <rect>
       <x>450</x>
@@ -769,7 +769,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_15">
+   <widget class="QLabel" name="personIcon2">
     <property name="geometry">
      <rect>
       <x>900</x>
@@ -788,7 +788,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_16">
+   <widget class="QLabel" name="favoriteIcons2">
     <property name="geometry">
      <rect>
       <x>980</x>
@@ -807,7 +807,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_17">
+   <widget class="QLabel" name="dialpad2">
     <property name="geometry">
      <rect>
       <x>700</x>
@@ -826,7 +826,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_18">
+   <widget class="QLabel" name="clockIcon2">
     <property name="geometry">
      <rect>
       <x>790</x>
@@ -845,7 +845,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_19">
+   <widget class="QLabel" name="menuIcon">
     <property name="geometry">
      <rect>
       <x>1000</x>
@@ -864,7 +864,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_20">
+   <widget class="QLabel" name="iPhone1">
     <property name="geometry">
      <rect>
       <x>-50</x>
@@ -883,7 +883,7 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <widget class="QLabel" name="label_21">
+   <widget class="QLabel" name="iPhone2">
     <property name="geometry">
      <rect>
       <x>480</x>
@@ -902,8 +902,8 @@ background-repeat:none;</string>
      <string/>
     </property>
    </widget>
-   <zorder>label_21</zorder>
-   <zorder>label_20</zorder>
+   <zorder>iPhone2</zorder>
+   <zorder>iPhone1</zorder>
    <zorder>pushOne</zorder>
    <zorder>pushTwo</zorder>
    <zorder>pushThree</zorder>
@@ -921,25 +921,25 @@ background-repeat:none;</string>
    <zorder>lineDisplay</zorder>
    <zorder>tableSafe</zorder>
    <zorder>addressBook</zorder>
-   <zorder>label_2</zorder>
-   <zorder>label_3</zorder>
-   <zorder>label_4</zorder>
-   <zorder>label_5</zorder>
-   <zorder>label_6</zorder>
-   <zorder>label_7</zorder>
-   <zorder>label_8</zorder>
-   <zorder>label_9</zorder>
-   <zorder>label_10</zorder>
-   <zorder>label_11</zorder>
-   <zorder>label</zorder>
-   <zorder>label_12</zorder>
-   <zorder>label_13</zorder>
-   <zorder>label_14</zorder>
-   <zorder>label_15</zorder>
-   <zorder>label_16</zorder>
-   <zorder>label_17</zorder>
-   <zorder>label_18</zorder>
-   <zorder>label_19</zorder>
+   <zorder>MNO</zorder>
+   <zorder>JKL</zorder>
+   <zorder>GHI</zorder>
+   <zorder>ABC</zorder>
+   <zorder>DEF</zorder>
+   <zorder>percent</zorder>
+   <zorder>PQRS</zorder>
+   <zorder>TUV</zorder>
+   <zorder>WXYZ</zorder>
+   <zorder>plus</zorder>
+   <zorder>dialpad</zorder>
+   <zorder>personIcon</zorder>
+   <zorder>recentIcon</zorder>
+   <zorder>favoriteIcons</zorder>
+   <zorder>personIcon2</zorder>
+   <zorder>favoriteIcons2</zorder>
+   <zorder>dialpad2</zorder>
+   <zorder>clockIcon2</zorder>
+   <zorder>menuIcon</zorder>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
