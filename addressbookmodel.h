@@ -10,9 +10,7 @@ class AddressBookModel : public QAbstractTableModel
 {
 public:
     AddressBookModel(QObject *parent);
-    vector<QString> firstNames;
-    vector<QString> lastNames;
-    vector<QString> phoneNumbers;
+
 
     // QAbstractItemModel interface
 public:
@@ -22,6 +20,15 @@ public:
 
     void openFile(QString filePath);
     QString getPhoneNumber(int index);
+
+    void setFilterString(QString fStr);
+
+private:
+    vector<QString> firstNames;
+    vector<QString> lastNames;
+    vector<QString> phoneNumbers;
+
+    vector<int> filterIndex;
 };
 
 #endif // ADDRESSBOOKMODEL_H

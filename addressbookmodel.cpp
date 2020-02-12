@@ -12,7 +12,7 @@ AddressBookModel::AddressBookModel(QObject *parent)
 
 int AddressBookModel::rowCount(const QModelIndex &parent) const
 {
-    return firstNames.size();
+    return filterIndex.size();
 }
 
 int AddressBookModel::columnCount(const QModelIndex &parent) const
@@ -28,13 +28,13 @@ QVariant AddressBookModel::data(const QModelIndex &index, int role) const
         {
         // first name
         case 0:
-            return firstNames.at(index.row());
+            return firstNames.at(filterIndex[index.row()]);
         // last name
         case 1:
-            return lastNames.at(index.row());
+            return lastNames.at(filterIndex[index.row()]);
         // phone numbers
         case 2:
-            return phoneNumbers.at(index.row());
+            return phoneNumbers.at(filterIndex[index.row()]);
         }
 
         return QString("Row%1, Column%2")
@@ -68,15 +68,13 @@ void AddressBookModel::openFile(QString filePath)
         if(i == 0)
             continue;
 
-        for(int j = 0; j < fields.length(); j++)
-        {
-            std::cout << fields[j].toStdString() << std::endl;
-        }
-
         firstNames.push_back(fields[0]);
         lastNames.push_back(fields[1]);
         phoneNumbers.push_back(fields[7]);
+
+        filterIndex.push_back(i);
     }
+
     file.close();
 
     emit layoutChanged();
@@ -84,8 +82,24 @@ void AddressBookModel::openFile(QString filePath)
 
 QString AddressBookModel::getPhoneNumber(int index)
 {
-    QString numDashes = phoneNumbers.at(index);
+    QString numDashes = phoneNumbers.at(filterIndex[index]);
     QString number = numDashes.left(3) + numDashes.mid(4,3) + numDashes.mid(8);
-    cout << number.toStdString() << endl;
     return number;
+}
+
+void AddressBookModel::setFilterString(QString fStr)
+{
+    // clear finter index
+    filterIndex.clear();
+
+    // matches phone numbers that start with fStr
+    for (int i = 0; i < phoneNumbers.size(); i++)
+    {
+        if (phoneNumbers[i].startsWith(fStr))
+        {
+            filterIndex.push_back(i);
+        }
+    }
+
+    emit layoutChanged();
 }
