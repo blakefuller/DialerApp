@@ -183,7 +183,6 @@ void DialerWindow::on_actionOpen_Address_Book_triggered()
                                                 tr("Address Book (*.csv);;All Files (*)"));
 
     addressBookModel->openFile(file);
-//    numMain.remove(numMain.length()-1,1);
     addressBookModel->setFilterString(numMain);
 }
 
