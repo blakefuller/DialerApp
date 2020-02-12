@@ -32,6 +32,8 @@ void DialerWindow::on_pushOne_clicked()
         numMain += "1";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushTwo_clicked()
@@ -41,6 +43,8 @@ void DialerWindow::on_pushTwo_clicked()
         numMain += "2";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushThree_clicked()
@@ -50,6 +54,8 @@ void DialerWindow::on_pushThree_clicked()
         numMain += "3";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 
@@ -60,6 +66,8 @@ void DialerWindow::on_pushFour_clicked()
         numMain += "4";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushFive_clicked()
@@ -69,6 +77,8 @@ void DialerWindow::on_pushFive_clicked()
         numMain += "5";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushSix_clicked()
@@ -78,6 +88,8 @@ void DialerWindow::on_pushSix_clicked()
         numMain += "6";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushSeven_clicked()
@@ -87,6 +99,8 @@ void DialerWindow::on_pushSeven_clicked()
         numMain += "7";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushEight_clicked()
@@ -96,6 +110,8 @@ void DialerWindow::on_pushEight_clicked()
         numMain += "8";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushNine_clicked()
@@ -105,6 +121,8 @@ void DialerWindow::on_pushNine_clicked()
         numMain += "9";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushZero_clicked()
@@ -114,6 +132,8 @@ void DialerWindow::on_pushZero_clicked()
         numMain += "0";
         ui->lineDisplay->setText(numMain);
     }
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushStar_clicked()
@@ -131,6 +151,8 @@ void DialerWindow::on_pushDel_clicked()
     // remove last element on numMain
     numMain.remove(numMain.length()-1,1);
     ui->lineDisplay->setText(numMain);
+
+    addressBookModel->setFilterString(numMain);
 }
 
 void DialerWindow::on_pushEnd_clicked()
