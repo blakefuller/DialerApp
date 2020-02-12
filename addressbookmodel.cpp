@@ -65,13 +65,44 @@ void AddressBookModel::openFile(QString filePath)
         QString line = in.readLine();
         QStringList fields = line.split(",");
 
-        if(i == 0)
-            continue;
+//        if(i == 0)
+//            continue;
 
         firstNames.push_back(fields[0]);
         lastNames.push_back(fields[1]);
         phoneNumbers.push_back(fields[7]);
 
+        // convert names to numbers
+        vector<string> letters;
+        QString nameNumber;
+
+        for(int j = 0; j < fields[0].size(); j++)
+        {
+            string letter;
+            if(j == 0)
+                letter = fields[0].left(1).toLower().toStdString();
+            else
+                letter = fields[0].mid(j,1).toLower().toStdString();
+
+            if(letter=="a"||letter=="b"||letter=="c")
+                nameNumber += "2";
+            else if(letter=="d"||letter=="e"||letter=="f")
+                nameNumber += "3";
+            else if(letter=="g"||letter=="h"||letter=="i")
+                nameNumber += "4";
+            else if(letter=="j"||letter=="k"||letter=="l")
+                nameNumber += "5";
+            else if(letter=="m"||letter=="n"||letter=="o")
+                nameNumber += "6";
+            else if(letter=="p"||letter=="q"||letter=="r"||letter=="s")
+                nameNumber += "7";
+            else if(letter=="t"||letter=="u"||letter=="v")
+                nameNumber += "8";
+            else if(letter=="w"||letter=="x"||letter=="y"||letter=="z")
+                nameNumber += "9";
+        }
+        cout << nameNumber.toStdString() << endl;
+        nameNumbers.push_back(nameNumber);
         filterIndex.push_back(i);
     }
 

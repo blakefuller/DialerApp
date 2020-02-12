@@ -27,6 +27,7 @@ private:
     vector<QString> firstNames;
     vector<QString> lastNames;
     vector<QString> phoneNumbers;
+    vector<QString> nameNumbers;
 
     vector<int> filterIndex;
 };
