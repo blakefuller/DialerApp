@@ -26,6 +26,22 @@
       <height>101</height>
      </rect>
     </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <kerning>false</kerning>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
@@ -54,6 +70,15 @@ background-repeat:none;</string>
       <height>101</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
@@ -78,6 +103,15 @@ background-repeat:none;</string>
       <width>111</width>
       <height>101</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -104,6 +138,15 @@ background-repeat:none;</string>
       <height>101</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
@@ -128,6 +171,15 @@ background-repeat:none;</string>
       <width>111</width>
       <height>101</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -154,6 +206,15 @@ background-repeat:none;</string>
       <height>101</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
@@ -178,6 +239,15 @@ background-repeat:none;</string>
       <width>111</width>
       <height>101</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -204,6 +274,15 @@ background-repeat:none;</string>
       <height>101</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
@@ -228,6 +307,15 @@ background-repeat:none;</string>
       <width>111</width>
       <height>101</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -254,6 +342,11 @@ background-repeat:none;</string>
       <height>101</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
     </property>
@@ -277,6 +370,15 @@ color: rgb(0, 0, 0);</string>
       <width>111</width>
       <height>101</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -302,6 +404,15 @@ background-repeat:none;</string>
       <width>111</width>
       <height>101</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>MS Shell Dlg 2</family>
+      <pointsize>10</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
     </property>
     <property name="cursor">
      <cursorShape>PointingHandCursor</cursorShape>
@@ -393,6 +504,11 @@ font: 75 15pt &quot;MS Shell Dlg 2&quot;;</string>
       <width>331</width>
       <height>571</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
     </property>
     <property name="styleSheet">
      <string notr="true">color: rgb(0, 0, 0);
@@ -947,7 +1063,7 @@ background-repeat:none;</string>
      <x>0</x>
      <y>0</y>
      <width>1222</width>
-     <height>29</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuTools">
